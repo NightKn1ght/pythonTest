@@ -13,11 +13,7 @@ class Solution:
                     arr = ''.join(letters).split(x, maxsplit=1)
                     number += romanNumerals.get(x) - self.romanToInt(arr[0])
                     return number + self.romanToInt(''.join(arr[1]))
-            else:
-                continue
-
-        return 0
-
+        return 0 
 
 ff = Solution()
 print(ff.romanToInt("MMCMDXXXIV"))
